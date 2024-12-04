@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java switch</title>
+</head>
+<body>
+    <marquee behavior="scroll" direction="left"><p style="color: blue;">Let's Learn how to use javascript in HTML:</p></marquee>
+    <div class="container" style="border: 2em double #fb43e3;">
+        <h2>Javascript switch</h2>
+    <p>Getting current day!!</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let day;
+        switch(new Date().getDay()) {
+            case 0: 
+            day = "Sunday";
+            break;
+
+            case 1:
+                day = "Monday";
+                break;
+            case 2: 
+                day = "Tuesday";
+                break;
+
+            case 3:
+                    day = "Wednesday";
+                    break;
+
+            case 4:
+                    day = "Thursday";
+                    break;
+                    
+            case 5:
+                day = "Friday";
+                break;
+            
+            case 6:
+                day = "Saturday";
+                break;          
+        }
+
+        document.getElementById("demo").innerHTML = "Today is " + day; 
+
+    </script>
+    <br>
+<h3>Using default if neither of the days is given.</h3> 
+<p id="demo!"></p>
+
+<script>
+    let text;
+    switch(new Date().getDay()) {
+        default:
+            Text = "Looking Forward to Weekend!!";
+            break;
+        case 0:
+            Text = "Today is Sunday";
+            break;
+        case 2:
+            Text = "Today is Tuesday";        
+    }
+
+    document.getElementById("demo!").innerHTML = Text;
+</script>
+
+<br>
+<h2>JavaScript switch</h2>
+
+<p id="demo!!"></p>
+
+<script>
+let x = "0";
+
+switch (x) {
+  case 0:
+    x = "Off";
+    break;
+  case 1:
+    x = "on";
+    break;
+  default:
+    text = "No value found";
+}
+document.getElementById("demo!!").innerHTML = text;
+</script>
+
+</div>
+</body>
+</html>
